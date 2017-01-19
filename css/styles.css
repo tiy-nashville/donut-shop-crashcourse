@@ -1,0 +1,253 @@
+/*
+    Defaults and resets + normalize.css
+*/
+.clearfix:after {
+    content:" ";
+    display:table;
+    clear:both;
+}
+
+figure{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0 16px;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    /* background: url('../img/bg.jpg'); */
+    color: #333;
+}
+
+img{
+    width: 100%;
+    display: block;
+    margin: 0;
+}
+
+a{
+    color: #ff6c6c;
+}
+
+a:hover{
+    color: #eb8212;
+}
+
+/********************************************************
+*********************************************************
+*******     header styles and logo styles      **********
+*********************************************************/
+
+
+header {
+  margin: 0 -16px;
+  padding: 32px 16px;
+
+  background: #aaccdd;
+}
+
+.top-nav {
+  max-width: 900px;
+  margin: auto;
+}
+
+.logo {
+  max-width: 48px;
+}
+
+.big-picture {
+  position: relative;
+  /* Make this full-width to counter body padding */
+  margin: 0 -16px;
+  /* Add space between the text and the edge of this element */
+  padding: 128px 0;
+
+
+  text-align: center;
+  color: #fff;
+}
+
+.big-picture::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  background: url('../donuts.jpg') no-repeat center center fixed;
+  background-size: cover;
+
+  filter: brightness(80%) sepia(10%);
+  width: 100%;
+  height: 100%;
+}
+
+/********************************************************
+*********************************************************
+*********************************************************/
+
+
+
+/*
+    Site wrapper for centering
+*/
+.wrapper{
+    max-width: 900px;
+    background: white;
+    margin: 0 auto 100px auto;
+    border-radius: 1px;
+    overflow:  hidden;
+    margin-top: 20px;
+    box-shadow: 0.1rem 0.1rem 0.4rem rgba( 0, 0 ,0, 0.2 );
+}
+
+
+
+/*
+    Button styles
+*/
+.btn{
+    display: inline-block;
+    padding: 8px 32px;
+    margin: 0;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0 -1px 1px rgba( 0,0,0,0.3 );
+    background: linear-gradient( 0deg, #03b53a, #03d04c );
+    border-radius: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    border: none;
+    outline: none;
+}
+.btn:hover{
+    background: linear-gradient( 0deg, #b85a0b, #eb8212 );
+    color: white;
+}
+
+
+
+/********************************************************
+*********************************************************
+*******     hero-banner code starts here      ***********
+*********************************************************/
+
+
+
+
+
+
+
+
+
+
+/********************************************************
+*********************************************************
+*********************************************************/
+
+
+
+/*
+    Main content area, Hero and paragraph text
+*/
+.main{
+    padding: 20px;
+}
+.main .why-knot{
+    width: 50%;
+    float: left;
+}
+.why-knot h2{
+    margin-top: 0;
+}
+.main figure{
+    width: 45%;
+    float: right;
+}
+
+
+
+
+/*
+    Footer stuff
+*/
+footer{
+    clear: both;
+    background: #493e32;
+    padding: 20px 0 0 20px;
+    margin:  20px;
+    border-radius: 1px;
+}
+
+footer a:hover{
+    color: #03d04c;
+}
+
+.contact{
+    color: white;
+    width: 20%;
+    float: right;
+    padding-right: 10%;
+}
+.contact h2{
+    margin: 0;
+}
+.contact ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.contact li{
+    font-size: 0.8em;
+}
+
+
+/*
+    Changable donut image
+*/
+.animation{
+    float: left;
+}
+.animation figure{
+    width: 401px;
+    height: 317px;
+    overflow: hidden;
+    position: relative;
+}
+.animation img{
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.donut_controls{
+    padding: 20px 0;
+}
+.donut_controls .btn{
+    display: block;
+    width: 100%;
+    padding: 6px 0;
+    margin-bottom: 6px;
+    font-size: 0.8em;
+}
+
+
+/*
+    CSS for hiding and showing donut images,
+    Paired with the javascript in main.js
+*/
+img.plain,
+img.stripes,
+img.sprinkles{
+    z-index: 100;
+    display: none;
+}
+.plain img.plain,
+.stripes img.stripes,
+.sprinkles img.sprinkles{
+    z-index: 300;
+    display: block;
+}
